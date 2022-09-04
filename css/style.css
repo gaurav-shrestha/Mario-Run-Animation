@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#Main_bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+
+.mario img {
+  width: 10%;
+  position: absolute;
+  bottom: 9vh;
+  animation-name: MarioRun;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes MarioRun {
+  0% {
+    left: 0%;
+    transform: rotateY(0deg);
+  }
+  49% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    left: 88%;
+    transform: rotateY(180deg);
+  }
+  99% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    left: 0%;
+    transform: rotateY(0deg);
+  }
+}
+
+
+h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 5vh;
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  animation: MarioText 4s linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+@keyframes MarioText {
+  0% {
+    font-size: 5vh;
+  }
+  100% {
+    font-size: 9vh;
+    left: 40%;
+  }
+}
